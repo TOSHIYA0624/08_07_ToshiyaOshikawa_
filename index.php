@@ -19,12 +19,13 @@
 <!-- Head[End] -->
 
 <!-- Main[Start] -->
-<form method="post" action="insert.php">
+<form method="post" action="insert.php" enctype="multipart/form-data">
   <div class="jumbotron">
    <fieldset>
     <legend>本の登録</legend>
      <label>名前：<input type="text" name="name"></label><br>
      <label>URL：<input type="text" name="url"></label><br>
+     <!-- <label>ファイル：<input type="file" name="up_file"></label><br> -->
      <label>感想：<textArea name="comment" rows="4" cols="40"></textArea></label><br>
      <input type="submit" value="送信">
     </fieldset>
